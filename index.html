@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tela de acesso a Sistema SENAI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+
+    <div class="content">
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+
+        <!-- Codigo andre -->
+        <img src="/senailogo2.jpg" width= "440px" alt="Senai - Campina Grande/PB">
+        <h1>LOGIN</h1>
+        <form method="POST" action="/auth" >
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Seu endereço de e-mail">
+          </div>
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Sua senha">
+          </div>
+          <button type="submit" class="button">Login</button>
+          <p>
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+        </form>
+
+        <p class="link">
+          Ainda não tem conta?
+          <a href="/cadastro.html">Cadastre-se</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
